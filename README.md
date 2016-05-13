@@ -3,7 +3,7 @@ GraphQL demo in node
 
 ## Develop
 1. `npm install && npm start`
-2. visit `http://127.0.0.1/graphql`
+2. visit `http://127.0.0.1/graphql` or `http://127.0.0.1/another`
 3. try with following query string
 ```
 query Query {
