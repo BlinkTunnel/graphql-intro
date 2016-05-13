@@ -1,7 +1,7 @@
-var Schema = require('graph.ql');
-var rq = require('request-promise');
+import Schema from 'graph.ql';
+import rq from 'request-promise';
 
-var schema = Schema(`
+const schema = Schema(`
   # github repository
   type Repo {
     id: Int
