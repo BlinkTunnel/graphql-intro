@@ -2,6 +2,11 @@ import Schema from 'graph.ql';
 import rq from 'request-promise';
 
 const schema = Schema(`
+  enum UserType {
+    User
+    Organization
+  }
+
   # github repository
   type Repo {
     id: Int
@@ -15,7 +20,7 @@ const schema = Schema(`
     id: Int
     avatar_url: String
     html_url: String
-    type: String
+    type: UserType
     name: String
     company: String
     blog: String
